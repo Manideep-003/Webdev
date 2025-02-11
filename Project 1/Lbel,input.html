@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>html forms</h1>
+    <!-- "action" is used to send all info to backend when we click submit button which we use like sql and other backend languages -->
+    <form action="">  
+        <label for="username">Enter username:</label>
+        <!-- "required" is used to fill that information mandetorly -->
+        <input type="text" id="username" placeholder="ur name"required>
+        <br><br>
+        <label for="email">Enter email:</label>
+        <input type="text" id="email" placeholder="email"required>
+        <br><br>
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" placeholder="password"required>
+        <br><br>
+        <div class="radio concept">
+            <p>select your gender</p>
+          <input type="radio" name="grnder" value="male" id="option1">
+          <label for="option1">male</label><br>
+          <input type="radio" id="option2"name="grnder" value="female">
+          <label for="option2">female</label><br>
+          <input type="radio"id="option3"name="grnder" value="other">
+          <label for="option3">other</label><br>
+        </div>
+        <div class="secutity questuin consept">
+            <select name="question" id="question">
+                <option value="q1">what is ur dogs name?</option>
+                <option value="q2">what is ur favourite color?</option>
+                <option value="q3"> what is ur favourite dink?</option>
+            </select>
+            <br><br>
+            <label for="answer">security question answer</label>
+            <input type="text" id="answer" name="answer">
+            <br><br>
+            <label for="bio">enter your bio:</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10"placeholder="about you..."></textarea>
+        </div>
+        <br><br>
+    </form>
+    <div class="submit">
+        <input type="submit" value="click to submit">
+        <input type="reset">
+
+    </div>
+</body>
+</html>
